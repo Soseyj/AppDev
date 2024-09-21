@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const main = require('../controller/Main');
 
+router.get('/', main.index);
 router.get('/index', main.index);
 router.get('/services', main.services);
 router.get('/about', main.about);
